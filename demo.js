@@ -24,3 +24,10 @@ app.get('/hello', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+// v8-isolate.h isolate 隔离沙箱
+// v8-context.h  环境上下文  window 隔离
+// v8-script.h 预编译
+// v8-template.h 类型 Object Function 多态
+// handle 句柄 唯一的一个Int32值
+var a = 1; // 1421421句柄值
